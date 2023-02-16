@@ -47,7 +47,16 @@ const UseState = () => {
 
 export default UseState;
 
-/* 
+/*
+  📌 UseState Hooks Info 🗒️
+
+  The useState hook returns an array with two entries. 
+  The first entry in the array is the current state while 
+  the second entry is the method which allows us to update the state. 
+
+  Example: 
+
+  const [state, setState] = useState(initialState)
   
   📌 React Hooks Rules 🗒️
   
@@ -55,7 +64,9 @@ export default UseState;
     const [state, setState] = useState("hello world!");
   } 
 
-  This code ⬆️ will give error because: React Hook "useState" is called conditionally
+  This code will give error: React Hook "useState" is called conditionally
+
+  Reason:
 
   React Hooks must be called in the exact same order in every component render
   that mean we can not call any react hook in if statements or functions, 
@@ -77,7 +88,7 @@ export default UseState;
 
   useState( Slow computation )
 
-  example:
+  Example:
 
   const [count, setCount] = useState(0);  
   OR   
@@ -93,7 +104,7 @@ export default UseState;
     Slow computation 
   })
 
-  example:
+  Example:
   
   const [count, setCount] = useState(()=>{
     console.log("Run ...")
@@ -115,7 +126,7 @@ export default UseState;
   this is incorrect way to update value of useState based on previous value because 
   if call setCount two times in a row it will just update the value at once
  
-  for example:
+  Example:
 
   function increment() {
     setCount(count + 1);
@@ -131,7 +142,7 @@ export default UseState;
 
   it will take the previous State as an argument and then it will update the current state
   
-  for example:
+  Example:
   
   function increment() {
     setCount((prevCount) => prevCount + 1);
@@ -171,7 +182,7 @@ export default UseState;
     return { ...prevPreferences, theme: 'dark' }
   })
 
-  example:
+  Example:
 
   const [state, setState] = useState ({ count: 4, theme: "blue ' })
   
@@ -180,11 +191,24 @@ export default UseState;
     return { ...prevState, count: prevState.count - 1 }
   }
 
-  if don't want to use object for storing multiple/different types of state 
-  you can use as multiple useState hook to store different types of states.
+  ------------------------------------------------------------------------------
+
+  📌 Using Multiple useState Hooks - ANOTHER WAY 🟢
+
+  Function components can use multiple useState hooks inside one component 
+  it is much more common to have an individual useState hook for each piece of state.
+  This is as simple as having multiple useState hooks one after another.
+
+  If you don't want to use object for storing multiple/different types of state 
+  you can use multiple useState hook to store different types of states.
   this is the biggest advantage of useState hook.
-  
-  that you can have multiple different pieces of state, all broken out and 
-  it becomes much easier to manage and change state of one type without changing others.
+
+  Example:
+
+  const [count, setCount] = useState(0);
+  const [theme, setTheme] = useState(dark);
+
+  it makes sure each part of your state has its own name and update function 
+  which makes handling state much easier.
 
  */
