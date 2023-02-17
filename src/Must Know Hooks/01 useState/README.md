@@ -1,5 +1,11 @@
 # UseState Hook 🪝
 
+1. [UseState Hook Info](##UseState-Hook-Info)
+2. [React Hook Rules](##React-Hook-Rules)
+3. [Initial State Computation](##Initial-State-Computation)
+4. [Wrong Way Of Using Hook](##Wrong-Way-Of-Using-Hook)
+5. [Using Multiple useState Hooks - Another Way](##Using-Multiple-useState-Hooks-Another-Way)
+
 ## UseState Hook Info
 
 The useState hook returns an array with two entries.
@@ -23,7 +29,6 @@ React Hooks must be called in the exact same order in every component render
 that means we can not call any react hook in if statements or functions,
 or inside of loops, they can not be nested in any thing, the must be at the
 top level of functional component.
-
 
 ## Initial State Computation
 
@@ -67,8 +72,6 @@ By using this function version of useState you will no longer run the
 slow computation each render, but only once on the first render of the
 component just like class components.
 
-
-
 ## Wrong Way Of Using Hook 🔴
 
     setCount(count-1)
@@ -96,8 +99,6 @@ It will take the previous State as an argument and then it will update the curre
     function increment() {
         setCount((prevCount) => prevCount + 1);
     }
-
-
 
 ## Updating State Objects
 
@@ -139,8 +140,6 @@ with the new dark theme preference. - CORRECT WAY 🟢
         setState(prevState => {
         return { ...prevState, count: prevState.count - 1 }
     }
-
-
 
 ## Using Multiple useState Hooks - Another Way 🟢
 
