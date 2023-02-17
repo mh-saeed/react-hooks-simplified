@@ -1,12 +1,14 @@
 # UseState Hook 🪝
 
-1. [UseState Hook Info](##UseState-Hook-Info)
-2. [React Hook Rules](##React-Hook-Rules)
-3. [Initial State Computation](##Initial-State-Computation)
-4. [Wrong Way Of Using Hook](##Wrong-Way-Of-Using-Hook)
-5. [Using Multiple useState Hooks - Another Way](##Using-Multiple-useState-Hooks-Another-Way)
+1. [UseState Hook Info](#1)
+2. [React Hook Rules](#2)
+3. [Initial State Computation](#3)
+4. [Wrong Way Of Using Hook](#4)
+5. [Correct Way Of Using Hook](#5)
+6. [Updating State Objects](#6)
+7. [Using Multiple useState Hooks - Another Way](#7)
 
-## UseState Hook Info
+## UseState Hook Info <a name="1"></a>
 
 The useState hook returns an array with two entries.
 The first entry in the array is the current state while
@@ -16,7 +18,7 @@ the second entry is the method which allows us to update the state.
 
     const [state, setState] = useState(initialState)
 
-## React Hook Rules
+## React Hook Rules <a name="2"></a>
 
     if (true) {
         const [state, setState] = useState("hello world!");
@@ -30,7 +32,7 @@ that means we can not call any react hook in if statements or functions,
 or inside of loops, they can not be nested in any thing, the must be at the
 top level of functional component.
 
-## Initial State Computation
+## Initial State Computation <a name="3"></a>
 
 Sometimes it is slow to compute the initial state of a component.
 This is not a problem in class components since the initial state
@@ -72,7 +74,7 @@ By using this function version of useState you will no longer run the
 slow computation each render, but only once on the first render of the
 component just like class components.
 
-## Wrong Way Of Using Hook 🔴
+## Wrong Way Of Using Hook 🔴 <a name="4"></a>
 
     setCount(count-1)
 
@@ -86,7 +88,7 @@ if call setCount two times in a row it will just update the value at once
         setCount(count + 1);
     }
 
-## Correct Way Of Using Hook 🟢
+## Correct Way Of Using Hook 🟢 <a name="5"></a>
 
 Instead use the below way for updating state.
 
@@ -100,7 +102,7 @@ It will take the previous State as an argument and then it will update the curre
         setCount((prevCount) => prevCount + 1);
     }
 
-## Updating State Objects
+## Updating State Objects <a name="6"></a>
 
 Most of the time we use single values with useState,
 but there are some cases where using an object makes more sense.
@@ -141,7 +143,7 @@ with the new dark theme preference. - CORRECT WAY 🟢
         return { ...prevState, count: prevState.count - 1 }
     }
 
-## Using Multiple useState Hooks - Another Way 🟢
+## Using Multiple useState Hooks - Another Way 🟢 <a name="7"></a>
 
 Function components can use multiple useState hooks inside one component
 it is much more common to have an individual useState hook for each piece of state.
