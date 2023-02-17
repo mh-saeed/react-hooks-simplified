@@ -12,7 +12,7 @@ The useState hook returns an array with two entries.
 The first entry in the array is the current state while
 the second entry is the method which allows us to update the state.
 
-Example:
+`Example:`
 
     const [state, setState] = useState(initialState)
 
