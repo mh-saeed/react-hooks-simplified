@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 
-// Explanation & additional Info is at the end of code
-
 const UseState = () => {
   const [count, setCount] = useState(() => {
-    console.log("Run ...");
+    // console.log("Run ...");
     return 0;
   });
 
   const [theme, setTheme] = useState(() => {
-    console.log("Run ...");
+    // console.log("Run ...");
     return "dark";
   });
 
