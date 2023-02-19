@@ -10,9 +10,16 @@
 
 ## UseState Hook Info <a name="1"></a>
 
+useState hook gives us local state in a function component.<br>
+
+You can simply use React.useState() or Just import useState from react.<br>
+
 The useState hook returns an array with two entries.
-The first entry in the array is the current state while
-the second entry is the method which allows us to update the state.
+
+- The `1st` entry in the array is the current state while. <br>
+- The `2nd` entry is the method which allows us to update the state. <br>
+
+It takes in initial state data as a parameter in useState() <br>
 
 `Example:`
 
