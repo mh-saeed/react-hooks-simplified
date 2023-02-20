@@ -1,12 +1,12 @@
 # UseState Hook 🪝
 
-1. [UseState Hook Info](#1)
-2. [React Hook Rules](#2)
-3. [Initial State Computation](#3)
-4. [Wrong Way Of Using Hook](#4)
-5. [Correct Way Of Using Hook](#5)
-6. [Updating State Objects](#6)
-7. [Using Multiple useState Hooks - Another Way](#7)
+- [UseState Hook Info](#1)
+- [React Hook Rules](#2)
+- [Initial State Computation](#3)
+- [Wrong Way Of Using Hook](#4)
+- [Correct Way Of Using Hook](#5)
+- [Updating State Objects](#6)
+- [Using Multiple useState Hooks - Another Way](#7)
 
 ## UseState Hook Info <a name="1"></a>
 

@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 const UseEffect = () => {
   // -------------------- Example 1 --------------------
 
-  const [resourceType, setResourceType] = useState("posts");
+  const [resourceType, setResourceType] = useState("users");
   const [items, setItems] = useState([]);
 
   useEffect(() => {
@@ -33,24 +33,41 @@ const UseEffect = () => {
     };
   }, []);
 
+  // -------------------- Example 3 --------------------
+  const [userInfo, setUserInfo] = useState("");
+
+  useEffect(() => {
+    async function fetchUser() {
+      const response = await fetch(`https://api.github.com/users/mh-saeed`);
+      const fetchedUser = await response.json();
+      setUserInfo(() => fetchedUser);
+      console.log("running ... ");
+    }
+    fetchUser();
+  }, []);
+
   return (
     <>
       {/* -------------------- Example 1 -------------------- */}
-
       <div>
         <button onClick={() => setResourceType("posts")}>Posts</button>
         <button onClick={() => setResourceType("users")}>Users</button>
         <button onClick={() => setResourceType("comments")}>Comments</button>
       </div>
 
-      {/* -------------------- Example 2 -------------------- */}
-
       <h3>{resourceType}</h3>
       {items.map((item) => {
-        return <pre key={Math.random(10)}>{JSON.stringify(item)}</pre>;
+        return <pre key={Math.random(10)}>{JSON.stringify(item, null, 4)}</pre>;
       })}
 
+      {/* -------------------- Example 2 -------------------- */}
+
       <div>Window Width: {windowWidth}</div>
+
+      {/* // -------------------- Example 3 -------------------- */}
+
+      <h2>GitHub User</h2>
+      <pre>{JSON.stringify(userInfo, null, 4)}</pre>
     </>
   );
 };
