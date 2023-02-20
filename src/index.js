@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import UseState from "./Must Know Hooks/01 useState/useState";
-import UseEffect from "./Must Know Hooks/02 useEffect/useEffect";
+import UseState from "./Must Know Hooks/01 useState";
+import UseEffect from "./Must Know Hooks/02 useEffect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
