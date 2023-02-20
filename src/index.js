@@ -1,7 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import UseState from "./Must Know Hooks/01 useState";
-import UseEffect from "./Must Know Hooks/02 useEffect";
+import UseState from "./Must Know Hooks/01 useState/01 useState";
+import {
+  UseEffectBasic,
+  UseEffectGithubAPI,
+  UseEffectWindowInnerWidth,
+  UseEffectNonPrimitiveDependency,
+} from "./Must Know Hooks/02 useEffect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
@@ -11,7 +16,10 @@ root.render(
     <UseState />
     <hr />
     <h2>UseEffect</h2>
-    <UseEffect />
+    <UseEffectBasic />
+    <UseEffectGithubAPI />
+    <UseEffectWindowInnerWidth />
+    <UseEffectNonPrimitiveDependency />
   </>
   // </React.StrictMode>
 );
