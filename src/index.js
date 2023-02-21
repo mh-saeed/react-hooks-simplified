@@ -2,10 +2,11 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import UseState from "./Must Know Hooks/01 useState/01 useState";
 import {
-  UseEffectBasic,
-  UseEffectGithubAPI,
-  UseEffectWindowInnerWidth,
-  UseEffectNonPrimitiveDependency,
+  // UseEffectBasic,
+  // UseEffectGithubAPI,
+  // UseEffectWindowInnerWidth,
+  // UseEffectNonPrimitiveDependency,
+  UseEffectWrongWay,
 } from "./Must Know Hooks/02 useEffect";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -16,12 +17,13 @@ root.render(
     <UseState />
     <hr />
     <h2>UseEffect</h2>
-    <UseEffectBasic />
+    {/* <UseEffectBasic />
     <UseEffectGithubAPI />
     <UseEffectWindowInnerWidth />
-    <UseEffectNonPrimitiveDependency />
+    <UseEffectNonPrimitiveDependency /> */}
+    <UseEffectWrongWay />
   </>
-  // </React.StrictMode>
+  // </React.StrictMode> */
 );
 
 /* 
