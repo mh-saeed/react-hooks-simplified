@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const UseEffectWrongWay = () => {
   const [number, setNumber] = useState(0);
 
-  // WRONG (DO NOT UPDATE USING THE STATE ITSELF)
+  // 1️⃣ WRONG (DO NOT UPDATE USING THE STATE ITSELF)
 
   // if we update the state like this ⏬ than our useEffect will run infinitely
 
@@ -14,7 +14,7 @@ const UseEffectWrongWay = () => {
   //   }, [1000]);
   // }, [number]);
 
-  // Almost Correct Way but still need some improvement NO CLEAN-UP
+  // 2️⃣ Almost Correct Way but still need some improvement
 
   //  if we add text together with the state, which also useEffect dependency, then our counter app will brock. That is because in every render we created another interval without cleaning the previous one. As you can see(in console) we have many intervals running. Of course, to find out this issue, we shouldn't test it by writing something with  useEffect dependency (<div>{number}something</div>), and this is where React Strict Mode is so important.
 
@@ -25,7 +25,9 @@ const UseEffectWrongWay = () => {
   //   }, [1000]);
   // }, []);
 
-  // Correct Way using CLEAN-UP
+  // 3️⃣ Correct Way using CLEAN-UP
+
+  // cleanup function prevents  any memory leaking and makes your applications much faster.
 
   useEffect(() => {
     console.log("useEffect runs");

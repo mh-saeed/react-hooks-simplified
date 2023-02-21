@@ -1,28 +1,43 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import UseState from "./Must Know Hooks/01 useState/01 useState";
+import "./style.css";
+import { Route, Routes } from "react-router-dom";
+import { BrowserRouter as Router } from "react-router-dom";
 import {
+  // UseState,
   // UseEffectBasic,
   // UseEffectGithubAPI,
   // UseEffectWindowInnerWidth,
   // UseEffectNonPrimitiveDependency,
-  UseEffectWrongWay,
-} from "./Must Know Hooks/02 useEffect";
+  // UseEffectWrongWay,
+  Home,
+  User,
+  Posts,
+} from "./Must Know Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
+
 root.render(
   // <React.StrictMode>
+
   <>
-    <h2>UseState</h2>
-    <UseState />
-    <hr />
-    <h2>UseEffect</h2>
-    {/* <UseEffectBasic />
-    <UseEffectGithubAPI />
-    <UseEffectWindowInnerWidth />
-    <UseEffectNonPrimitiveDependency /> */}
-    <UseEffectWrongWay />
+    {/* <UseState /> */}
+
+    {/* <UseEffectBasic /> */}
+    {/* <UseEffectGithubAPI /> */}
+    {/* <UseEffectWindowInnerWidth /> */}
+    {/* <UseEffectNonPrimitiveDependency /> */}
+    {/* <UseEffectWrongWay />  */}
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="posts" element={<Posts />} />
+        <Route path="users/:id" element={<User />} />
+      </Routes>
+    </Router>
   </>
+
   // </React.StrictMode> */
 );
 
@@ -36,4 +51,6 @@ Strict mode can’t automatically detect side effects for you, but it can help y
 5. Functions passed to useState, useMemo, or useReducer 
 
 If you remove the StrictMode element from index.js, you'll see the output only gets logged once
+
+Note: Strict mode checks are run in development mode only; they do not impact the production build.
 */
