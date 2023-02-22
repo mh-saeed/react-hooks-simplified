@@ -1,12 +1,11 @@
-import { useTheme, useThemeUpdate } from "./ThemeContext";
+import { useTheme } from "./ThemeContext";
 
 const FunctionContextComponent = () => {
-  const darkTheme = useTheme();
-  const toggleTheme = useThemeUpdate();
+  const { useDarkTheme, toggleTheme } = useTheme();
 
   const themeStyles = {
-    backgroundColor: darkTheme ? "#333" : "#CCC",
-    color: darkTheme ? "#CCC" : "#333",
+    backgroundColor: useDarkTheme ? "#333" : "#CCC",
+    color: useDarkTheme ? "#CCC" : "#333",
     padding: "2rem",
     margin: "2rem",
   };
