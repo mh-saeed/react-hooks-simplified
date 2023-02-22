@@ -7,3 +7,4 @@ export { default as UseEffectWrongWay } from "./02 useEffect/05 useEffectWrongWa
 export { default as Home } from "./02 useEffect/Home";
 export { default as User } from "./02 useEffect/User";
 export { default as Posts } from "./02 useEffect/Posts";
+export { default as App } from "./03 useContext/App";

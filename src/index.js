@@ -1,8 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";
-import { Route, Routes } from "react-router-dom";
-import { BrowserRouter as Router } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
+// import { BrowserRouter as Router } from "react-router-dom";
 import {
   // UseState,
   // UseEffectBasic,
@@ -10,9 +10,10 @@ import {
   // UseEffectWindowInnerWidth,
   // UseEffectNonPrimitiveDependency,
   // UseEffectWrongWay,
-  Home,
-  User,
-  Posts,
+  // Home,
+  // User,
+  // Posts,
+  App,
 } from "./Must Know Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -29,13 +30,16 @@ root.render(
     {/* <UseEffectNonPrimitiveDependency /> */}
     {/* <UseEffectWrongWay />  */}
 
-    <Router>
+    {/* <Router>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="posts" element={<Posts />} />
         <Route path="users/:id" element={<User />} />
       </Routes>
-    </Router>
+    </Router> */}
+
+    {/* UseContext*/}
+    <App />
   </>
 
   // </React.StrictMode> */
