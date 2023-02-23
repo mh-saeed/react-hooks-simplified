@@ -18,7 +18,9 @@ import "./style.css";
 
 import {
   // UseRef,
-  UseRefVSUseState,
+  // UseRefVSUseState,
+  // UseRefDOM,
+  UseRefStorePrevValue,
 } from "./02 Lesser Used Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -47,7 +49,9 @@ root.render(
     {/* <App /> */}
 
     {/* <UseRef /> */}
-    <UseRefVSUseState />
+    {/* <UseRefVSUseState /> */}
+    {/* <UseRefDOM /> */}
+    <UseRefStorePrevValue />
   </>
 
   // </React.StrictMode> */

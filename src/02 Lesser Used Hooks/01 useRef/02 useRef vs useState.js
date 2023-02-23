@@ -26,3 +26,6 @@ const UseRefVSUseState = () => {
   );
 };
 export default UseRefVSUseState;
+
+// Updating a reference doesn't trigger re-rendering, while updating the state makes the component re-render;
+// The reference update is synchronous (the updated reference value is available right away), while the state update is asynchronous (the state variable is updated after re-rendering).
