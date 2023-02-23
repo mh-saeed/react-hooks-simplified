@@ -20,7 +20,8 @@ import {
   // UseRef,
   // UseRefVSUseState,
   // UseRefDOM,
-  UseRefStorePrevValue,
+  // UseRefStorePrevValue,
+  Stopwatch,
 } from "./02 Lesser Used Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -51,7 +52,8 @@ root.render(
     {/* <UseRef /> */}
     {/* <UseRefVSUseState /> */}
     {/* <UseRefDOM /> */}
-    <UseRefStorePrevValue />
+    {/* <UseRefStorePrevValue /> */}
+    <Stopwatch />
   </>
 
   // </React.StrictMode> */
