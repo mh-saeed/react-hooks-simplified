@@ -24,7 +24,7 @@ function UseMemoSolution() {
         placeholder="enter a text"
       />
       <input
-        type="number"
+        type={"number"}
         value={number}
         onChange={(e) => setNumber(e.target.value)}
       />
