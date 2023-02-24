@@ -25,7 +25,7 @@ import {
   // UseMemoProblem,
   // UseMemoSolution,
   // UseMemoUseEffect,
-  UseMemoExpensiveComponent,
+  // UseMemoExpensiveComponent,
   UseMemoAlternative,
 } from "./02 Lesser Used Hooks";
 
@@ -63,7 +63,7 @@ root.render(
     {/* <UseMemoSolution /> */}
     {/* <UseMemoUseEffect /> */}
     {/* <UseMemoExpensiveComponent /> */}
-    {/* <UseMemoAlternative /> */}
+    <UseMemoAlternative />
   </>
 
   // </React.StrictMode> */
