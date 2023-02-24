@@ -13,7 +13,7 @@ import "./style.css";
 //   Home,
 //   User,
 //   Posts,
-//   App,
+//   UseContextApp,
 // } from "./01 Must Know Hooks";
 
 import {
@@ -24,7 +24,9 @@ import {
   // Stopwatch,
   // UseMemoProblem,
   // UseMemoSolution,
-  UseMemoUseEffect,
+  // UseMemoUseEffect,
+  UseMemoExpensiveComponent,
+  UseMemoAlternative,
 } from "./02 Lesser Used Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -49,8 +51,7 @@ root.render(
       </Routes>
     </Router> */}
 
-    {/* UseContext*/}
-    {/* <App /> */}
+    {/* <UseContextApp /> */}
 
     {/* <UseRef /> */}
     {/* <UseRefVSUseState /> */}
@@ -60,7 +61,9 @@ root.render(
 
     {/* <UseMemoProblem /> */}
     {/* <UseMemoSolution /> */}
-    <UseMemoUseEffect />
+    {/* <UseMemoUseEffect /> */}
+    {/* <UseMemoExpensiveComponent /> */}
+    {/* <UseMemoAlternative /> */}
   </>
 
   // </React.StrictMode> */

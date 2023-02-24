@@ -10,7 +10,7 @@ function UseMemoUseEffect() {
   //     citizen: country === "USA" ? true : false,
   //   };
 
-  // if you have an non-primitive data type (like an array or an object) as a useEffect dependency, you can wrap that dependency with useMemo hook to avoid un-necessary components re-renders
+  // if you have an non-primitive data type (like an array or an object) as a useEffect dependency, you can wrap that dependency with useMemo hook to avoid un-necessary components re-renders but since it is not an expensive dependency we should pass the object property individually and should avoid using useMemo
 
   const userType = useMemo(
     () => ({

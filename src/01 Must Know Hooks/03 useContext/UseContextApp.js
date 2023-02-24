@@ -1,7 +1,7 @@
 import FunctionContextComponent from "./FunctionContextComponent";
 import ThemeProvider from "./ThemeContext";
 
-const App = () => {
+const UseContextApp = () => {
   return (
     <ThemeProvider>
       <FunctionContextComponent />
@@ -9,4 +9,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default UseContextApp;
