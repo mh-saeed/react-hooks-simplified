@@ -3,7 +3,7 @@ import React, { useEffect, useState } from "react";
 const Posts = () => {
   const [posts, setPosts] = useState([]);
 
-  //HOW TO FETCH DATA PROPERLY
+  // HOW TO FETCH DATA PROPERLY
   useEffect(() => {
     let subscribed = true;
     fetch("https://jsonplaceholder.typicode.com/posts")

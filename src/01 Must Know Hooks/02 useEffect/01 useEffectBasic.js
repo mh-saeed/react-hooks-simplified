@@ -11,9 +11,11 @@ const UseEffectBasic = () => {
 
     // cleanup function will ran first to clean whatever we did last time
     return () => {
-      console.log("return from the useEffect");
+      console.log("Cleaning Previous UseEffect Work");
     };
   }, [resourceType]);
+
+  console.log("Component Rendered ... ");
 
   return (
     <>

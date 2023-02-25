@@ -27,7 +27,7 @@ const UseEffectWrongWay = () => {
 
   // 3️⃣ Correct Way using CLEAN-UP
 
-  // cleanup function prevents  any memory leaking and makes your applications much faster.
+  // cleanup function prevents any memory leaking and makes your applications much faster.
 
   useEffect(() => {
     console.log("useEffect runs");

@@ -1,31 +1,38 @@
 import { useState } from "react";
 
 function UseMemoProblem() {
-  const [text, setText] = useState("");
+  const [number, setNumber] = useState(0);
+  const [dark, setDark] = useState(false);
+  
+  const doubleNumber = expensiveSlowFunction(number);
 
-  const expensiveFunction = () => {
-    console.log("function running!");
-    let total = 0;
-    for (let i = 1; i < 100000000; i++) {
-      total += i;
-    }
-    return total;
+  const themeStyles = {
+    backgroundColor: dark ? "black" : "white",
+    color: dark ? "white" : "black",
   };
-
-  const sum = expensiveFunction();
 
   console.log("component rendered!");
 
   return (
     <div>
       <input
-        onChange={(e) => setText(e.target.value)}
+        type={"number"}
+        value={number}
+        onChange={(e) => setNumber(parseInt(e.target.value))}
         placeholder="enter a text"
       />
-      <span>Total: {sum}</span>
-      <span>Text: {text}</span>
+      <button onClick={() => setDark((prevDarkValue) => !prevDarkValue)}>
+        Change Theme
+      </button>
+      <div style={themeStyles}>{doubleNumber}</div>
     </div>
   );
 }
 
 export default UseMemoProblem;
+
+const expensiveSlowFunction = (num) => {
+  console.log("Expensive function running!");
+  for (let i = 1; i < 1000000000; i++) {}
+  return num * 2;
+};

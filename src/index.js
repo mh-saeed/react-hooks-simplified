@@ -1,8 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./style.css";
+
 // import { Route, Routes } from "react-router-dom";
 // import { BrowserRouter as Router } from "react-router-dom";
+
 // import {
 //   UseState,
 //   UseEffectBasic,
@@ -66,7 +68,7 @@ root.render(
     <UseMemoAlternative />
   </>
 
-  // </React.StrictMode> */
+  //   </React.StrictMode>
 );
 
 /* 
