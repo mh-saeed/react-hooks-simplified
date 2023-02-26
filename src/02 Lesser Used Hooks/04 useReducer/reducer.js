@@ -1,23 +1,18 @@
-const ACTIONS = {
-  INCREMENT: "increment",
-  DECREMENT: "decrement",
-  RESET: "reset",
-  CHANGE_COUNT: "change-count",
-};
-
-const reducer = (count, action) => {
+export const reducer = (count, action) => {
   switch (action.type) {
-    case ACTIONS.INCREMENT:
+    case "increment":
       return count + 1;
-    case ACTIONS.DECREMENT:
+
+    case "decrement":
       return count - 1;
-    case ACTIONS.RESET:
+
+    case "reset":
       return 0;
-    case ACTIONS.CHANGE_COUNT:
+
+    case "change-count":
       return count + action.payload.amount;
+
     default:
       return count;
   }
 };
-
-export default reducer;

@@ -1,7 +1,7 @@
 import { useReducer } from "react";
-import reducer from "./reducer";
+import { reducer } from "./reducer";
 
-const UseReduceExample = () => {
+const UseReducer = () => {
   const [count, dispatch] = useReducer(reducer, 0);
   console.log("Component rendered ...");
 
@@ -22,4 +22,4 @@ const UseReduceExample = () => {
   );
 };
 
-export default UseReduceExample;
+export default UseReducer;

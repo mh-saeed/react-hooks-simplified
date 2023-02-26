@@ -31,7 +31,9 @@ import {
   // UseMemoAlternative,
   // UseCallbackProblem,
   // UseCallbackSolution,
-  UseReducerExample,
+  // UseReducer,
+  // UseReducerCleanerWay,
+  UseReducerComplexExample,
 } from "./02 Lesser Used Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -69,11 +71,13 @@ root.render(
     {/* <UseMemoUseEffect /> */}
     {/* <UseMemoExpensiveComponent /> */}
     {/* <UseMemoAlternative /> */}
-    
+
     {/* <UseCallbackProblem /> */}
     {/* <UseCallbackSolution /> */}
 
-    <UseReducerExample />
+    {/* <UseReducer /> */}
+    {/* <UseReducerCleanerWay /> */}
+    <UseReducerComplexExample />
   </>
 
   //   </React.StrictMode>
