@@ -1,3 +1,4 @@
+import React from "react";
 const Todo = ({ todo, dispatch, ACTIONS }) => {
   console.log(`Todo Component : ${todo.complete}`);
 
@@ -24,4 +25,4 @@ const Todo = ({ todo, dispatch, ACTIONS }) => {
     </>
   );
 };
-export default Todo;
+export default React.memo(Todo);
