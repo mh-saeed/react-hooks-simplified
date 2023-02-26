@@ -12,3 +12,4 @@ export { default as UseMemoAlternative } from "./02 useMemo/05 useMemoAlternativ
 
 export { default as UseCallbackProblem } from "./03 useCallback/01 useCallback(Problem)";
 export { default as UseCallbackSolution } from "./03 useCallback/02 useCallback(Solution)";
+export { default as UseReducerExample } from "./04 useReducer/01 useReducer";

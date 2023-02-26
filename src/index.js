@@ -30,7 +30,8 @@ import {
   // UseMemoExpensiveComponent,
   // UseMemoAlternative,
   // UseCallbackProblem,
-  UseCallbackSolution,
+  // UseCallbackSolution,
+  UseReducerExample,
 } from "./02 Lesser Used Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -68,8 +69,11 @@ root.render(
     {/* <UseMemoUseEffect /> */}
     {/* <UseMemoExpensiveComponent /> */}
     {/* <UseMemoAlternative /> */}
+    
     {/* <UseCallbackProblem /> */}
-    <UseCallbackSolution />
+    {/* <UseCallbackSolution /> */}
+
+    <UseReducerExample />
   </>
 
   //   </React.StrictMode>
