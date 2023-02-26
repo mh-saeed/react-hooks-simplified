@@ -12,12 +12,12 @@ const UseReducerComplexExample = () => {
   function handleSubmit(e) {
     e.preventDefault();
 
-    console.log(inputRef.current.value);
-
-    dispatch({
-      type: ACTIONS.ADD_TODO,
-      payload: { name: inputRef.current.value },
-    });
+    if (inputRef.current.value.length > 0) {
+      dispatch({
+        type: ACTIONS.ADD_TODO,
+        payload: { name: inputRef.current.value },
+      });
+    }
 
     inputRef.current.value = "";
   }
