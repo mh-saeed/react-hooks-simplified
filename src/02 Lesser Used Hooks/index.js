@@ -9,3 +9,6 @@ export { default as UseMemoSolution } from "./02 useMemo/02 useMemo(Solution)";
 export { default as UseMemoUseEffect } from "./02 useMemo/03 useMemoWithUseEffect";
 export { default as UseMemoExpensiveComponent } from "./02 useMemo/04 useMemoWithExpensiveComponent";
 export { default as UseMemoAlternative } from "./02 useMemo/05 useMemoAlternative";
+
+export { default as UseCallbackProblem } from "./03 useCallback/01 useCallback(Problem)";
+export { default as UseCallbackSolution } from "./03 useCallback/02 useCallback(Solution)";
