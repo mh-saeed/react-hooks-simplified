@@ -16,3 +16,4 @@ export { default as UseCallbackSolution } from "./03 useCallback/02 useCallback(
 export { default as UseReducer } from "./04 useReducer/00 useReducer";
 export { default as UseReducerCleanerWay } from "./04 useReducer/01 useReducerCleanerWay";
 export { default as UseReducerComplexExample } from "./04 useReducer/02 useReducerComplexExample";
+export { default as UseReducerContextApp } from "./04 useReducer/useReducerWithContext /UseReducerWithContextApp";
