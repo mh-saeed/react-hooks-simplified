@@ -20,3 +20,5 @@ export { default as UseReducerContextApp } from "./04 useReducer/useReducerWithC
 
 export { default as UseTransitionProblem } from "./05 useTransition/01 useTransitionProblem";
 export { default as UseTransitionSolution } from "./05 useTransition/02 useTransitionSolution";
+
+export { default as UseDeferredValue } from "./06 useDeferredValue/01 useDeferredValue";
