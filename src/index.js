@@ -34,7 +34,9 @@ import {
   // UseReducer,
   // UseReducerCleanerWay,
   // UseReducerComplexExample,
-  UseReducerContextApp,
+  // UseReducerContextApp,
+  // UseTransitionProblem,
+  UseTransitionSolution,
 } from "./02 Lesser Used Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -79,7 +81,10 @@ root.render(
     {/* <UseReducer /> */}
     {/* <UseReducerCleanerWay /> */}
     {/* <UseReducerComplexExample /> */}
-    <UseReducerContextApp />
+    {/* <UseReducerContextApp /> */}
+
+    {/* <UseTransitionProblem /> */}
+    <UseTransitionSolution />
   </>
 
   //   </React.StrictMode>
