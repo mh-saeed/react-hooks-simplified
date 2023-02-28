@@ -2,12 +2,12 @@ import React, { useState } from "react";
 
 const UseState = () => {
   const [count, setCount] = useState(() => {
-    // console.log("Run ...");
+    console.log("count state function Ran ...");
     return 0;
   });
 
   const [theme, setTheme] = useState(() => {
-    // console.log("Run ...");
+    console.log("theme state function Ran ...");
     return "dark";
   });
 
@@ -29,14 +29,16 @@ const UseState = () => {
     );
   }
 
+  console.log("Component Rendered ...");
+
   return (
     <>
       <div>
-        <button onClick={decrement}>-</button>
         <span>{count}</span>
         <span>{theme}</span>
-        <button onClick={increment}>+</button>
       </div>
+      <button onClick={increment}>+</button>
+      <button onClick={decrement}>-</button>
       <button onClick={reset}>Reset</button>
       <button onClick={changeTheme}>change theme</button>
     </>
