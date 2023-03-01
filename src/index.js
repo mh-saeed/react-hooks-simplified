@@ -18,27 +18,29 @@ import "./style.css";
 //   UseContextApp,
 // } from "./01 Must Know Hooks";
 
-import {
-  // UseRef,
-  // UseRefVSUseState,
-  // UseRefDOM,
-  // UseRefStorePrevValue,
-  // Stopwatch,
-  // UseMemoProblem,
-  // UseMemoSolution,
-  // UseMemoUseEffect,
-  // UseMemoExpensiveComponent,
-  // UseMemoAlternative,
-  // UseCallbackProblem,
-  // UseCallbackSolution,
-  // UseReducer,
-  // UseReducerCleanerWay,
-  // UseReducerComplexExample,
-  // UseReducerContextApp,
-  // UseTransitionProblem,
-  // UseTransitionSolution,
-  UseDeferredValue,
-} from "./02 Lesser Used Hooks";
+// import {
+// UseRef,
+// UseRefVSUseState,
+// UseRefDOM,
+// UseRefStorePrevValue,
+// Stopwatch,
+// UseMemoProblem,
+// UseMemoSolution,
+// UseMemoUseEffect,
+// UseMemoExpensiveComponent,
+// UseMemoAlternative,
+// UseCallbackProblem,
+// UseCallbackSolution,
+// UseReducer,
+// UseReducerCleanerWay,
+// UseReducerComplexExample,
+// UseReducerContextApp,
+// UseTransitionProblem,
+// UseTransitionSolution,
+// UseDeferredValue,
+// } from "./02 Lesser Used Hooks";
+
+import { UseLayoutEffect } from "./03 Optional Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -87,7 +89,9 @@ root.render(
     {/* <UseTransitionProblem /> */}
     {/* <UseTransitionSolution /> */}
 
-    <UseDeferredValue />
+    {/* <UseDeferredValue /> */}
+
+    <UseLayoutEffect />
   </>
 
   //   </React.StrictMode>
