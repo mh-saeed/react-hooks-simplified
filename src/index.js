@@ -40,7 +40,10 @@ import "./style.css";
 // UseDeferredValue,
 // } from "./02 Lesser Used Hooks";
 
-import { UseLayoutEffect } from "./03 Optional Hooks";
+import {
+  // UseLayoutEffect,
+  UseDebugValue,
+} from "./03 Optional Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -91,7 +94,8 @@ root.render(
 
     {/* <UseDeferredValue /> */}
 
-    <UseLayoutEffect />
+    {/* <UseLayoutEffect /> */}
+    <UseDebugValue />
   </>
 
   //   </React.StrictMode>
