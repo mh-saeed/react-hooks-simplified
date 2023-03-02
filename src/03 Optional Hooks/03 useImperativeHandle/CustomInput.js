@@ -8,7 +8,7 @@ function CustomInput({ style, ...props }, ref) {
     },
     []
   );
-  
+
   return (
     <input
       ref={ref}

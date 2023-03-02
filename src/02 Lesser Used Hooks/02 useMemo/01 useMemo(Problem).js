@@ -3,7 +3,7 @@ import { useState } from "react";
 function UseMemoProblem() {
   const [number, setNumber] = useState(0);
   const [dark, setDark] = useState(false);
-  
+
   const doubleNumber = expensiveSlowFunction(number);
 
   const themeStyles = {

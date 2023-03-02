@@ -17,7 +17,6 @@ const Expensive = () => {
 
 export default Expensive;
 
-
 // both ways are correct to use React.memo
 
 // const Expensive = React.memo(() => {
