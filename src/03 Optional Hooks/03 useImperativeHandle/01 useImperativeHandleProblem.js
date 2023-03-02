@@ -13,7 +13,8 @@ const UseImperativeHandleProblem = () => {
         onChange={(e) => setValue(e.target.value)}
       />
       <br />
-      <button onClick={() => inputRef.current.focus()}>Focus</button>{" "}
+      {/* <button onClick={() => inputRef.current.focus()}>Focus</button>{" "} */}
+      <button onClick={() => inputRef.current.alertHi()}>Focus</button>{" "}
     </>
   );
 };
