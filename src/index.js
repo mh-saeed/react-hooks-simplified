@@ -42,7 +42,8 @@ import "./style.css";
 
 import {
   // UseLayoutEffect,
-  UseDebugValue,
+  // UseDebugValue,
+  UseImperativeHandleProblem,
 } from "./03 Optional Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
@@ -95,7 +96,9 @@ root.render(
     {/* <UseDeferredValue /> */}
 
     {/* <UseLayoutEffect /> */}
-    <UseDebugValue />
+    {/* <UseDebugValue /> */}
+
+    <UseImperativeHandleProblem />
   </>
 
   //   </React.StrictMode>
