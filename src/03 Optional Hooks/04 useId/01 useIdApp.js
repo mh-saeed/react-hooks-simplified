@@ -6,8 +6,8 @@ const UseIdApp = () => {
   return (
     <form>
       <h2>Form with out useId()</h2>
-      {/* <FormWithOutId />
-      <FormWithOutId /> */}
+      <FormWithOutId />
+      <FormWithOutId />
 
       <h2>Form with useId()</h2>
       <FormWithUseId />
