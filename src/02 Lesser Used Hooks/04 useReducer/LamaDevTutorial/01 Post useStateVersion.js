@@ -3,6 +3,7 @@ import { useState } from "react";
 const PostUseState = () => {
   // USING USE_STATE
 
+  // TODO: if two or more useState are being used in a component we should use useReducer
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState(false);
   const [post, setPost] = useState({});
@@ -17,7 +18,6 @@ const PostUseState = () => {
         setPost((prev) => (prev = data));
       })
       .catch((err) => {
-        setPost((prev) => (prev = {}));
         setLoading(false);
         setError(true);
       });

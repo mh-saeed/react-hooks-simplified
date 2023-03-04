@@ -1,20 +1,24 @@
 // FIRST EXAMPLE
-import PostUseState from "./01 Post useStateVersion";
-// import PostUseReducer from "./02 Post useReducer-version";
-import "./post.css";
+
+// import PostUseState from "./01 Post useStateVersion";
+// import PostUseReducer from "./02 Post useReducerVersion";
+// import "./post.module.css";
 
 // SECOND EXAMPLE
-// import Form from "./Form";
-// import "./form.css";
+
+// import FormUseState from "./03 Form useStateVersion";
+import FormUseReducer from "./04 Form useReducerVersion";
+import "./form.module.css";
 
 function UseReducerApp() {
   return (
     // FIRST EXAMPLE
-    <PostUseState />
-    // <PostUseReducer1 />
+    // <PostUseState />
+    //  <PostUseReducer />
 
     // SECOND EXAMPLE
-    // <Form />
+    // <FormUseState />
+    <FormUseReducer />
   );
 }
 
