@@ -18,34 +18,35 @@ import "./style.css";
 //   UseContextApp,
 // } from "./01 Must Know Hooks";
 
-// import {
-// UseRef,
-// UseRefVSUseState,
-// UseRefDOM,
-// UseRefStorePrevValue,
-// Stopwatch,
-// UseMemoProblem,
-// UseMemoSolution,
-// UseMemoUseEffect,
-// UseMemoExpensiveComponent,
-// UseMemoAlternative,
-// UseCallbackProblem,
-// UseCallbackSolution,
-// UseReducer,
-// UseReducerCleanerWay,
-// UseReducerComplexExample,
-// UseReducerContextApp,
-// UseTransitionProblem,
-// UseTransitionSolution,
-// UseDeferredValue,
-// } from "./02 Lesser Used Hooks";
-
 import {
-  // UseLayoutEffect,
-  // UseDebugValue,
-  // UseImperativeHandleProblem,
-  UseIdApp,
-} from "./03 Optional Hooks";
+  // UseRef,
+  // UseRefVSUseState,
+  // UseRefDOM,
+  // UseRefStorePrevValue,
+  // Stopwatch,
+  // UseMemoProblem,
+  // UseMemoSolution,
+  // UseMemoUseEffect,
+  // UseMemoExpensiveComponent,
+  // UseMemoAlternative,
+  // UseCallbackProblem,
+  // UseCallbackSolution,
+  // UseReducer,
+  // UseReducerCleanerWay,
+  // UseReducerComplexExample,
+  // UseReducerContextApp,
+  UseReducerApp,
+  // UseTransitionProblem,
+  // UseTransitionSolution,
+  // UseDeferredValue,
+} from "./02 Lesser Used Hooks";
+
+// import {
+// UseLayoutEffect,
+// UseDebugValue,
+// UseImperativeHandleProblem,
+// UseIdApp,
+// } from "./03 Optional Hooks";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
@@ -90,6 +91,7 @@ root.render(
     {/* <UseReducerCleanerWay /> */}
     {/* <UseReducerComplexExample /> */}
     {/* <UseReducerContextApp /> */}
+    <UseReducerApp />
 
     {/* <UseTransitionProblem /> */}
     {/* <UseTransitionSolution /> */}
@@ -101,7 +103,7 @@ root.render(
 
     {/* <UseImperativeHandleProblem /> */}
 
-    <UseIdApp />
+    {/* <UseIdApp /> */}
   </>
 
   //   </React.StrictMode>
