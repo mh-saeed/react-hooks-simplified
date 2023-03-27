@@ -18,18 +18,21 @@ export const postReducer = (state, action) => {
         error: false,
         post: {},
       };
+
     case ACTION_TYPES.FETCH_SUCCESS:
       return {
         ...state,
         loading: false,
         post: action.payload,
       };
+
     case ACTION_TYPES.FETCH_ERROR:
       return {
         error: true,
         loading: false,
         post: {},
       };
+
     default:
       return state;
   }

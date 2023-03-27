@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 
 const FormUseState = () => {
-  // USING USESTATE
+  // TODO: USING USESTATE
 
   const [product, setProduct] = useState({
     title: "",
@@ -49,7 +49,7 @@ const FormUseState = () => {
   };
 
   return (
-    // USING USESTATE
+    // TODO: USING USESTATE
 
     <div>
       <form>
