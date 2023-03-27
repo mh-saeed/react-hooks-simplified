@@ -11,12 +11,14 @@ const TodosProvider = ({ children }) => {
 
   function handleSubmit(e) {
     e.preventDefault();
+
     if (inputRef.current.value.length > 0) {
       dispatch({
         type: ACTIONS.ADD_TODO,
         payload: { name: inputRef.current.value },
       });
     }
+
     inputRef.current.value = "";
   }
 
