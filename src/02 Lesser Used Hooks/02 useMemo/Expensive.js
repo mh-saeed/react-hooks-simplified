@@ -5,6 +5,7 @@ import React from "react";
 // To prevent un-necessary renders, we can memoize this component using React.memo.
 //  we can either export it like, export default React.memo(Expensive)
 // or we can use it while creating the component like,
+
 // const Expensive = React.memo(() => { return JSX }
 
 const Expensive = () => {
@@ -15,7 +16,9 @@ const Expensive = () => {
   return <div>Expensive</div>;
 };
 
-export default Expensive;
+export default React.memo(Expensive);
+// export default Expensive;
+// export const MemoizedExpensive =  React.memo(Expensive);
 
 // both ways are correct to use React.memo
 
